@@ -4,7 +4,7 @@ A clean, responsive, and accessible technical documentation webpage that introdu
 ## Live Demo
 
 View the project online:
-https://python-technical-documentation.vercel.app/
+https://github.com/Heisray04/technical-documentation/
 
 ## Preview
 

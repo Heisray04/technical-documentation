@@ -166,7 +166,7 @@ address .contacts {
 
 
 /* Styles for tablets and laptops */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 620px) {
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 15px;
@@ -183,6 +183,8 @@ address .contacts {
         padding: 0 1rem 0 0;
         margin-right: 0;
     }
+
+    header h1 { font-size: 1.5rem; }
 
     #navbar {
         order: 1;
