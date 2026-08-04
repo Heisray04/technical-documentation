@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -325,4 +326,305 @@
         </main>
     </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Raymond" />
+        <meta name="description" content="A simple and concised technical documentation webpage created by Raymond." />
+        <title>Python Technical Documentation</title>
+        <meta property="og:title" content="Python Documentation" />
+        <meta property="og:description" content="A clean, responsive, and interactive guide to the fundamentals of Python programming." />
+        <meta property="og:image" content="https://i.ibb.co/XNWKPr1/og-preview.png" />
+        <meta property="og:url" content="https://technical-documentation.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Python Documentation" />
+        <meta name="twitter:description" content="A clean, responsive, and interactive guide to the fundamentals of Python programming." />
+        <meta name="twitter:image" content="https://i.ibb.co/XNWKPr1/og-preview.png" />
+        <meta name="twitter:url" content="https://technical-documentation.netlify.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" 
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQneiq9tReEsnmYX_v6xFUHlFmqkSd7WmHjgdECVVr1yQ&s" />
+        <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+    <body>
+        <main id="main-doc">
+            <nav id="navbar">
+                <header>
+                    <h1>Python Documentation</h1>
+                </header>
+                <input type="checkbox" id="drop-down" hidden/>
+                <label for="drop-down"><span class="material-symbols-outlined drop-down">arrow_drop_down_circle</span></label>
+                <ul>
+                    <li>Click the arrow to close</li>
+                    <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                    <li><a class="nav-link" href="#what_you_should_already_know">What You Should Already Know</a></li>
+                    <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+                    <li><a class="nav-link" href="#variables">Variables</a></li>
+                    <li><a class="nav-link" href="#data_types">Data Types</a></li>
+                    <li><a class="nav-link" href="#comparison_operators">Comparison Operators</a></li>
+                    <li><a class="nav-link" href="#comments">Comments</a></li>
+                    <li><a class="nav-link" href="#control_flow">Control Flow</a></li>
+                    <li><a class="nav-link" href="#loops">Loops</a></li>
+                    <li><a class="nav-link" href="#functions">Functions</a></li>
+                    <li><a class="nav-link" href="#data_structures">Data Structures</a></li>
+                    <li><a class="nav-link" href="#file_handling">File Handling</a></li>
+                    <li><a class="nav-link" href="#classes_and_oop">Classes and OOP</a></li>                   
+                </ul>
+            </nav>
+            <div class="context">
+                <section class="main-section" id="introduction">
+                    <header>
+                        <h2>Introduction</h2>
+                    </header>
+                    <p>
+                        Python is a high-level, interpreted programming language known for readable 
+                        syntax and broad use across web development, automation, data science, and AI. 
+                        Unlike compiled languages, Python code runs line-by-line through an interpreter, 
+                        which makes it easier to test and debug quickly.
+                    </p>
+                    <p>
+                        Python's design philosophy favors clarity — code is meant to read almost like plain
+                        English, which is part of why it's a common first language for beginners and a serious
+                        tool for professionals.
+                    </p>
+                </section>
+                <section class="main-section" id="what_you_should_already_know">
+                    <header>
+                        <h2>What You Should Already Know</h2>
+                    </header>
+                    <p>
+                        Before starting, you should be comfortable with basic computer literacy — installing 
+                        software, using a text editor, and navigating a file system. No prior programming 
+                        experience is required, but understanding basic math operations (addition, comparison) 
+                        will help.
+                    </p>
+                    <ul>
+                        <li>Basic keyboard and file navigation skills</li>
+                        <li>A text editor or IDE installed (e.g., VS Code)</li>
+                        <li>Python installed and runnable from a terminal</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="hello_world">
+                    <header>
+                        <h2>Hello World</h2>
+                    </header>
+                    <p>
+                        The traditional first program in any language prints a simple message to the screen. 
+                        In Python, this takes one line, thanks to the built-in <code class="code-block">print()</code> function.
+                    </p>
+                    <div class="code-block">
+                        <code><span class="code-keyword">print</span>(<span class="code-string">"Hello, world!"</span>)</code>
+                    </div>
+                    <p>
+                        Running this file through the Python interpreter outputs Hello, World! directly to the terminal.
+                    </p>
+                </section>
+                <section class="main-section" id="variables">
+                    <header>
+                        <h2>Variables</h2>
+                    </header>
+                    <p>
+                        A variable is a name that stores a value in memory, which you can reference and reuse. Python does 
+                        not require you to declare a variable's type — it's inferred automatically from the value assigned.
+                    </p>
+                    <div class="code-block">
+                        <code>name = <span class="code-string">"Ray"</span></code><br/>
+                        <code>age = <span class="code-int">20</span></code><br/>
+                        <code>is_learning = <span class="code-bool">True</span></code>
+                    </div>
+                </section>
+                <section class="main-section" id="data_types">
+                    <header>
+                        <h2>Data Types</h2>
+                    </header>
+                    <p>
+                        Python has several built-in data types that determine what kind of value a variable holds 
+                        and what operations can be performed on it.
+                    </p>
+                    <ul>
+                       <li><code class="code-block">int</code> — whole numbers (e.g., 10)</li>
+                       <li><code class="code-block">float</code> — decimal numbers (e.g., 3.14)</li>
+                       <li><code class="code-block">str</code> — text (e.g., "hello")</li>
+                       <li><code class="code-block">bool</code> — True or False</li>
+                       <li><code class="code-block">list</code> — an ordered, changeable collection</li>
+                    </ul>
+                    <div class="code-block">
+                        <code>x = <span class="code-int">10</span></code><code class="comment"># int</code><br/>                  
+                        <code>y = <span class="code-int">3.14</span></code><code class="comment"># float</code><br/>
+                        <code>name = <span class="code-string">"Ray"</span></code><code class="comment"># str</code><br/>
+                        <code>is_ok = <span class="code-bool">True</span></code><code class="comment"># bool</code>
+                    </div>
+                </section>
+                <section class="main-section" id="comparison_operators">
+                    <header>
+                        <h2>Comparison Operators</h2>
+                    </header>
+                    <p>
+                        Comparison operators compare two values and return a boolean (<code class="code-block">True</code> or <code class="code-block">False</code>). 
+                        They're used constantly in control flow to test conditions.
+                    </p>
+                    <div class="code-block">
+                        <code>a = <span class="code-int">10</span></code><br/>
+                        <code>b = <span class="code-int">5</span></code><br/>
+                        <code><span class="code-keyword">print</span>(a > b)<code class="comment"># True</code></code><br/>
+                        <code><span class="code-keyword">print</span>(a == b)<code class="comment"># False</code></code><br/>
+                        <code><span class="code-keyword">print</span>(a != b)<code class="comment"># True</code></code>
+                    </div>
+                    <ul>
+                        <li>== equal to</li>
+                        <li>!= not equal to</li>
+                        <li>> &lt; >= &lt;= greater/less than (or equal)</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="comments">
+                    <header>
+                        <h2>Comments</h2>
+                    </header>
+                    <p>
+                        Comments are lines in code that Python ignores when running the program. They exist purely 
+                        to explain code to humans reading it — either yourself later, or others working on the same file.
+                    </p>
+                    <div class="code-block">
+                        <code class="comment" style="margin-left: 0;"># This is a single-line comment</code><br/>
+                        <code><span class="code-keyword">print</span>(<span class="code-string">"This runs"</span>)</code><code class="comment"># This explains the line</code>
+                    </div>
+                </section>
+                <section class="main-section" id="control_flow">
+                    <header>
+                        <h2>Control Flow</h2>
+                    </header>
+                    <p>
+                        Control flow refers to the order in which a program's statements execute. 
+                        Python uses <code class="code-block">if</code>, <code class="code-block">elif</code>, and <code class="code-block">else</code> to make decisions based on conditions.
+                    </p>
+                    <div class="code-block">
+                        <code><span class="code-keyword">if</span> x > <span class="code-int">10</span>:</code><br />
+                        <code class="tab-4"><span class="code-keyword">print</span>(<span class="code-string">"Big"</span>)</code><br />
+                        <code><span class="code-keyword">elif</span> x == <span class="code-int">10</span>:</code><br />
+                        <code class="tab-4"><span class="code-keyword">print</span>(<span class="code-string">"Equal"</span>)</code><br />
+                        <code><span class="code-keyword">else</span>:</code><br />
+                        <code class="tab-4"><span class="code-keyword">print</span>(<span class="code-string">"Small"</span>)</code>
+                    </div>
+                </section>
+                <section class="main-section" id="loops">
+                    <header>
+                        <h2>Loops</h2>
+                    </header>
+                    <p>
+                        Loops let you repeat a block of code multiple times without rewriting it. 
+                        Python's most common loop, <code class="code-block">for</code>, iterates over a sequence like a <code class="code-block">list</code> or 
+                        <code class="code-block">range</code> of numbers.
+                    </p>
+                    <div class="code-block">
+                        <code><span class="code-keyword">for</span> i <span class="code-keyword">in range</span>(<span class="code-int">5</span>):</code><br />
+                        <code class="tab-4"><span class="code-keyword">print</span>(i)</code>
+                    </div>
+                </section>
+                <section class="main-section" id="functions">
+                    <header>
+                        <h2>Functions</h2>
+                    </header>
+                    <p>
+                        A function is a reusable block of code that performs a specific task, 
+                        defined once and called whenever needed. Functions help avoid repeating 
+                        code and make programs easier to organize and test.
+                    </p>
+                    <div class="code-block">
+                        <code><span class="code-keyword">def</span> add(a, b):</code><br />
+                        <code class="tab-4"><span class="code-keyword">return</span> a + b</code><br /><br />
+                        <code>result = add(<span class="code-int">4</span>, <span class="code-int">6</span>)</code>
+                    </div>
+                </section>
+                <section class="main-section" id="data_structures">
+                    <header>
+                        <h2>Data Structures</h2>
+                    </header>
+                    <p>
+                        Data structures organize and store collections of related data. 
+                        Python's two most-used built-in structures are <em>lists</em> (ordered collections)
+                        and <em>dictionaries</em> (key-value pairs).
+                    </p>
+                    <ul>
+                        <li>Lists store ordered items, accessed by index:<code class="code-block">nums = [1, 2, 3]</code></li>
+                        <li>Dictionaries store key-value pairs, accessed by key: <code class="code-block">person = {"name": "Ray"}</code></li>
+                    </ul>
+                    <p>
+                        Choosing between them depends on whether you need to access data by position (list) or by a named label (dictionary).
+                    </p>
+                </section>
+                <section class="main-section" id="file_handling">
+                    <header>
+                        <h2>File Handling</h2>
+                    </header>
+                    <p>
+                        File handling lets a program read from or write to files stored on disk. 
+                        Python's built-in <code class="code-block">open()</code> function, used with with, safely opens a file and 
+                        automatically closes it afterward.
+                    </p>
+                    <div class="code-block">
+                        <code><span class="code-keyword">with open</span>(<span class="code-string">"file.txt"</span>) <span class="code-keyword">as</span> f:</code><br />
+                        <code class="tab-4">data = f.read()</code><br />
+                        <code class="tab-4"><span class="code-keyword">print</span>(data)</code>
+                    </div>
+                    <p>
+                       Opening a file in write mode <em>("w")</em> instead of default read mode <em>("r")</em> lets you save data to it. 
+                    </p>
+                </section>
+                <section class="main-section" id="classes_and_oop">
+                    <header>
+                        <h2>Classes and OOP</h2>
+                    </header>
+                    <p>
+                        Object-Oriented Programming (OOP) organizes code around objects — bundles of data (attributes) 
+                        and behavior (methods) defined by a class, which acts as a blueprint.
+                    </p>
+                    <div class="code-block">
+                        <code><span class="code-keyword">class</span> Student:</code><br/>
+                        <code class="tab-4"><span class="code-keyword">def</span> __init__(<span class="code-keyword">self</span>, name):</code><br/>
+                        <code class="tab-8"><span class="code-keyword">self</span>.name = name</code><br/><br/>
+                        <code class="tab-4"><span class="code-keyword">def</span> greet(<span class="code-keyword">self</span>):</code><br/>
+                        <code class="tab-8"><span class="code-keyword">print</span>(f<span class="code-string">"Hi, I'm </span>{self.name}<span class="code-string">"</span>)</code><br/><br/>
+                        <code>s = Student(<span class="code-string">"Ray"</span>)</code><br/>
+                        <code>s.greet()</code>
+                    </div>
+                    <ul>
+                        <li><code class="code-block">class</code> defines a blueprint for creating objects</li>
+                        <li><code class="code-block">__init__</code> runs automatically when an object is created, setting its initial attributes</li>
+                        <li><code class="code-block">self</code> refers to the specific object calling the method</li>
+                    </ul>
+                </section>
+                <footer>
+                    <section class="privacy-info">
+                        <p>
+                            All texts in this page were generated using <a href="https://www.claude.ai" target="_blank" rel="noreferrer noopener">Claude AI</a>. 
+                            The creator claims <strong style="color: #000;">no right of ownership</strong> to any information found.
+                            Contact the author via 
+                        </p>
+                    </section>
+                    <address>
+                        <p>&copy; Technical Documentation Page 2026.</p>
+                        <p>Created by the Raymond you know 🙂.</p>
+                        <section class="contacts">
+                            <a href="https://wa.me/2349019732198?text=Hello%20Raymond,%20%0A" target="_blank" rel="noreferrer noopener">
+                                <span class="material-symbols-outlined message">comment</span>
+                            </a>
+                            <a href="mailto:rayboi004@gmail.com?subject=Feedback,%20Questions,%20or%20Complaints.%0A%0A&body=Hello%20Raymond,%20">
+                                <span class="material-symbols-outlined mail">mail</span>
+                            </a>
+                            <a href="https://twitter.com/HeisRay04" target="_blank" rel="noreferrer noopener" class="x-icon">X</a>
+                        </section>
+                    </address>
+                </footer>
+            </div>
+        </main>
+    </body>
+
+>>>>>>> 108dd93147df800bd6dcd6936b42355daa8439b0
 </html>
