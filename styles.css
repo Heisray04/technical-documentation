@@ -69,7 +69,7 @@ body {
     z-index: 1000;
 }
 
-.material-symbols-outlined.open-in-new { font-size: 1rem; vertical-align: middle; }
+.material-symbols-outlined.open-in-new { font-size: 0.9rem; vertical-align: middle; }
 
 #navbar input:checked ~ ul {
     display: flex;
