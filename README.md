@@ -4,7 +4,7 @@ A clean, responsive, and accessible technical documentation webpage that introdu
 ## Live Demo
 
 View the project online:
-https://heisray.github.io/technical-documentation/
+https://heisray04.github.io/technical-documentation/
 
 ## Preview
 
