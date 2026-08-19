@@ -65,7 +65,7 @@ body {
     color: rgb(255, 255, 255);
     border-radius: 50%;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     z-index: 1000;
 }
 
@@ -216,7 +216,9 @@ address .contacts {
 
     #navbar label, .visually-hidden-checkbox { display: none; }
 
-    .material-symbols-outlined.upward-alt:hover {
+    .material-symbols-outlined.upward-alt { font-size: 2rem;}
+	
+	.material-symbols-outlined.upward-alt:hover {
         transform: translateY(-5px);
         color: rgba(116, 116, 202, 0.788);
     }
