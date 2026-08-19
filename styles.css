@@ -57,6 +57,20 @@ body {
     color: rgb(20, 20, 226);
 }
 
+.material-symbols-outlined.upward-alt {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgb(158, 158, 160);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 2rem;
+    z-index: 1000;
+}
+
+.material-symbols-outlined.open-in-new { font-size: 1rem; vertical-align: middle; }
+
 #navbar input:checked ~ ul {
     display: flex;
     flex-direction: column;
@@ -90,7 +104,7 @@ a {
     font-family: monospace;
 }
 
-div.code-block {
+section.code-block {
     border: 2px solid rgba(164, 164, 241, 0.493);
     padding: 1rem;
 }
@@ -98,16 +112,19 @@ div.code-block {
 code.code-block { padding: 0.2rem 0.5rem; }
 code.tab-4 { margin-left: 1rem; }
 code.tab-8 { margin-left: 2rem; }
+code.tab-12 { margin-left: 3rem; }
 
 .comment {
     margin-left: 2rem;
-    color: rgb(83, 83, 83);
+    color: rgba(83, 83, 83, 0.671);
 }
 
-.code-keyword { color: rgb(236, 8, 236); font-weight: bold; }
-.code-string { color: rgb(7, 204, 7); }
-.code-int { color: rgb(248, 164, 6); }
-.code-bool { color: rgb(59, 59, 243); }
+.code-keyword { color: rgb(0, 62, 248); font-weight: bold; }
+.code-function { color: rgb(255, 0, 0); }
+.code-class-and-arg { color:rgb(160, 105, 2); }
+.code-string { color: rgb(0, 155, 0); }
+.code-int { color: rgb(255, 0, 170); }
+.code-bool { color: rgb(112, 2, 112); }
 
 footer {
     background-color: rgb(190, 229, 245);
@@ -119,6 +136,7 @@ footer {
 
 footer p { margin: 0.1rem 0; }
 footer .privacy-info a { text-decoration: underline dotted rgb(6, 78, 180); }
+footer .privacy-info a span { vertical-align: middle; }
 
 address {
     text-align: center;
@@ -193,10 +211,15 @@ address .contacts {
         top: 0;
         flex: 1 0 30vw;
         overflow-y: auto;
-        border-left: 2px solid rgba(255,255,255,0.1);
+        border-top: 2px solid rgba(255,255,255,0.1);
     }
 
     #navbar label, .visually-hidden-checkbox { display: none; }
+
+    .material-symbols-outlined.upward-alt:hover {
+        transform: translateY(-5px);
+        color: rgba(116, 116, 202, 0.788);
+    }
     
     #navbar ul {
         display: block;
@@ -209,7 +232,7 @@ address .contacts {
         border-bottom: 2px solid grey;
     }
 
-    div.context {
+    article.context {
         order: 2;
         flex: 1 1 70vw;
         padding: 2rem;
