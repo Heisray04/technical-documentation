@@ -210,7 +210,7 @@
                         <h2>Comments</h2>
                     </header>
                     <p>
-                        Comments are lines in code that <b>Python</b> ignores when running the program. They exist purely 
+                        Comments are code lines that <b>Python</b> ignores when running the program. They exist purely 
                         to explain code to humans reading it — either yourself later, or others working on the same file.
                     </p>
                     <section class="code-block">
@@ -414,12 +414,14 @@
                         <code class="tab-8">
                             <span class="code-keyword">self</span>.name = <span class="code-class-and-arg">name</span>
                         </code><br><br>
-                        <code>new_boy = <span class="code-class-and-arg">Boy</span>(<span class="code-string">"Paul"</span>)</code>
+                        <code>new_boy = <span class="code-class-and-arg">Boy</span>(<span class="code-string">"Paul"</span>)</code><br>
                         <code>new_boy.<span class="code-function">greet</span>() <span class="comment"># Hi, I am Paul</span></code>
                     </section>
                     <ul>
                         <li>
-                            <code class="code-block code-class-and-arg">Boy(<span class="code-class-and-arg">Student</span>)</code> 
+                            <code class="code-block">
+                                <span class="code-class-and-arg">Boy</span>(<span class="code-class-and-arg">Student</span>)
+                            </code> 
                             means Boy inherits from the <a href="#classes_and_oop">Student</a> class.
                             The Boy child-class can call the <code class="code-block"><span class="code-function">greet</span>()</code> 
                             method in the <a href="#classes_and_oop">Student</a> parent class.
@@ -448,30 +450,30 @@
                         <li>
                             Searching — 
                             <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_linearsearch.php" target="_blank">
-                                <em>linear search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                                linear search<span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a> (O(n)) vs 
                             <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_binarysearch.php" target="_blank">
-                                <em>binary search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                                binary search<span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a> on a sorted list (O(log n))</li>
                         <li>
                             Sorting — 
                             <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_bblsort.php" target="_blank">
-                                <em>bubble sort</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                                bubble sort<span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a> (O(n²)) vs 
                             <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_mergesort.php" target="_blank">
-                                <em>merge sort</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                                merge sort<span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a> (O(n log n)).
                         </li>
                         <li>
                             Graph algorithms — 
                             <a href="https://www.w3schools.com/dsa/dsa_data_binarytrees.php" target="_blank">
-                                <em>depth-first search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                                depth-first search<span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a>,
                             <a href="https://www.w3schools.com/dsa/dsa_data_binarytrees.php" target="_blank">
-                                <em>breadth-first search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                                breadth-first search<span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a>, 
                             <a href="https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php" target="_blank">
-                                <em>Dijkstra's shortest path</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                                Dijkstra's shortest path<span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a>.
                         </li>
                     </ul>
@@ -514,10 +516,14 @@
                     </p>
                     <ul>
                         <li>
-                            Overlapping subproblems — the same smaller calculation is needed repeatedly (e.g. Fibonacci numbers).
+                            <b>Overlapping subproblems</b> — the same smaller calculation is needed repeatedly (e.g., Fibonacci numbers).
                         </li>
-                        <li>Memoization (top-down) — solve recursively, caching each result the first time it's computed</li>
-                        <li>Tabulation (bottom-up) — build a table of results iteratively, from the smallest subproblem up.</li>
+                        <li>
+                            <b>Memoization</b> (top-down) — solve recursively, caching each result the first time it's computed
+                        </li>
+                        <li>
+                            <b>Tabulation</b> (bottom-up) — build a table of results iteratively, starting with the smallest subproblem.
+                        </li>
                     </ul>
                     <section class="code-block">
                         <code>
@@ -569,8 +575,8 @@
                         <li>
                             SQL databases (<b>SQLite</b>, <b>PostgreSQL</b>, <b>MySQL</b>) store data in structured tables of rows and columns.
                         </li>
-                        <li>NoSQL databases (e.g. <b>MongoDB</b>) store data more flexibly, as documents or key-value pairs.</li>
-                        <li>Basic operations are often called <i>CRUD</i>: Create, Read, Update, Delete.</li>
+                        <li>NoSQL databases (e.g., <b>MongoDB</b>) store data more flexibly, as documents or key-value pairs.</li>
+                        <li>Basic operations are often called <em>CRUD</em>: Create, Read, Update, Delete.</li>
                     </ul>
                     <section class="code-block">
                         <code><span class="code-keyword">import</span> sqlite3</code><br><br>
@@ -604,7 +610,7 @@
                     </header>
                     <p>
                         Networking code lets programs on different machines communicate over a network, 
-                        usually following the client-server model. One program (the client) requests data, another (the server) responds.
+                        usually following the client-server model. One program (the client) requests data; another (the server) responds.
                     </p>
                     <ul>
                         <li>
@@ -617,7 +623,8 @@
                     <section class="code-block">
                         <code><span class="code-keyword">import</span> requests</code><br><br>
                         <code>
-                            response = requests.<span class="code-function">get</span>("https://api.github.com")
+                            response = requests.<span class="code-function">get</span>
+                            (<span class="code-string">"https://api.github.com"</span>)
                         </code><br>
                         <code><span class="code-function">print</span>(response.status_code)</code><br>
                         <code><span class="code-function">print</span>(response.<span class="code-function">json</span>())  <span class="comment"># dictionary of the returned data</span></code>
@@ -632,7 +639,7 @@
                                 <span class="material-symbols-outlined open-in-new">open_in_new</span>
                             </a>
                             and reviewed/organized by the project author.
-                            The creator claims <strong style="color: #000;">no right of ownership</strong> to any information found.
+                            The creator claims <strong style="color: #000;">no ownership rights </strong> to any information found.
                             If there is any wrong, misleading, or inappropriate content found on this page, the creator will humbly take the blame.
                             Visit <a href="https://www.python.org/" target="_blank" rel="noreferrer noopener">
                                 Python.org
