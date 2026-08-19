@@ -28,7 +28,9 @@
         <main id="main-doc">
             <nav id="navbar">
                 <header>
-                    <h1>Python Documentation</h1>
+                    <h1>
+                        <a href="https://heisray04.github.io/technical-documentation">Python Documentation</a>
+                    </h1>
                 </header>
                 <input type="checkbox" id="drop-down" class="visually-hidden-checkbox"/>
                 <label for="drop-down">
@@ -51,9 +53,17 @@
                     <li><a class="nav-link" href="#data_structures">Data Structures</a></li>
                     <li><a class="nav-link" href="#file_handling">File Handling</a></li>
                     <li><a class="nav-link" href="#classes_and_oop">Classes and OOP</a></li>                   
+                    <li><a class="nav-link" href="#inheritance">Inheritance</a></li>                   
+                    <li><a class="nav-link" href="#algorithm">Algorithm</a></li>                   
+                    <li><a class="nav-link" href="#dynamic_programming">Dynamic Programming</a></li>                   
+                    <li><a class="nav-link" href="#databases">Databases</a></li>                   
+                    <li><a class="nav-link" href="#networking_programs">Networking Programs</a></li>                   
                 </ul>
             </nav>
-            <div class="context">
+            <article class="context">
+                <a href="#introduction">
+                    <span class="material-symbols-outlined upward-alt" title="Back to top">arrow_upward_alt</span>
+                </a>
                 <section class="main-section" id="introduction">
                     <header>
                         <h2>Introduction</h2>
@@ -92,11 +102,14 @@
                     </header>
                     <p>
                         The traditional first program in any language prints a simple message to the screen. 
-                        In <b>Python</b>, this takes one line, thanks to the built-in <code class="code-block"><span class="code-keyword">print</span>()</code> function.
+                        In <b>Python</b>, this takes one line, thanks to the built-in 
+                        <code class="code-block"><span class="code-function">print</span>()</code> function.
                     </p>
-                    <div class="code-block">
-                        <code><span class="code-keyword">print</span>(<span class="code-string">"Hello, world!"</span>)</code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-function">print</span>(<span class="code-string">"Hello, world!"</span>)
+                        </code>
+                    </section>
                     <p>
                         Running this file through the <b>Python</b> interpreter outputs Hello, World! directly to the terminal.
                     </p>
@@ -109,11 +122,17 @@
                         A variable is a name that stores a value in memory, which you can reference and reuse. <b>Python</b> does 
                         not require you to declare a variable's type — it's inferred automatically from the value assigned.
                     </p>
-                    <div class="code-block">
-                        <code>name = <span class="code-string">"Ray"</span></code><br/>
-                        <code>age = <span class="code-int">20</span></code><br/>
-                        <code>is_learning = <span class="code-bool">True</span></code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            name = <span class="code-string">"Ray"</span>
+                        </code><br>
+                        <code>
+                            age = <span class="code-int">20</span>
+                        </code><br>
+                        <code>
+                            is_learning = <span class="code-bool">True</span>
+                        </code>
+                    </section>
                 </section>
                 <section class="main-section" id="data_types">
                     <header>
@@ -124,34 +143,57 @@
                         and what operations can be performed on it.
                     </p>
                     <ul>
-                       <li><code class="code-block code-keyword">int</code> — whole numbers (e.g., <span class="code-int">10</span>)</li>
-                       <li><code class="code-block code-keyword">float</code> — decimal numbers (e.g., <span class="code-int">3.14</span>)</li>
-                       <li><code class="code-block code-keyword">str</code> — text (e.g., <span class="code-string">"hello"</span>)</li>
-                       <li><code class="code-block code-keyword">bool</code> — <code class="code-block code-bool">True</code> or <code class="code-block code-bool">False</code></li>
-                       <li><code class="code-block code-keyword">list</code> — an ordered, changeable collection</li>
+                        <li>
+                           <code class="code-block code-function">int</code> — whole numbers (e.g., <span class="code-int">10</span>) 
+                        </li>
+                        <li>
+                            <code class="code-block code-function">float</code> — decimal numbers (e.g., <span class="code-int">3.14</span>)
+                        </li>
+                        <li>
+                            <code class="code-block code-function">str</code> — text (e.g., <span class="code-string">"hello"</span>)
+                        </li>
+                        <li>
+                            <code class="code-block code-function">bool</code> — <code class="code-block code-bool">True</code> or 
+                            <code class="code-block code-bool">False</code>
+                        </li>
+                        <li><code class="code-block code-function">list</code> — an ordered, changeable collection</li>
                     </ul>
-                    <div class="code-block">
-                        <code>x = <span class="code-int">10</span></code><code class="comment"># int</code><br/>                  
-                        <code>y = <span class="code-int">3.14</span></code><code class="comment"># float</code><br/>
-                        <code>name = <span class="code-string">"Ray"</span></code><code class="comment"># str</code><br/>
-                        <code>is_ok = <span class="code-bool">True</span></code><code class="comment"># bool</code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            x = <span class="code-int">10</span><span class="comment"># int</span>
+                        </code><br>                  
+                        <code>
+                            y = <span class="code-int">3.14</span><span class="comment"># float</span>
+                        </code><br>
+                        <code>
+                            name = <span class="code-string">"Ray"</span><span class="comment"># str</span>
+                        </code><br>
+                        <code>
+                            is_ok = <span class="code-bool">True</span><span class="comment"># bool</span>
+                        </code>
+                    </section>
                 </section>
                 <section class="main-section" id="comparison_operators">
                     <header>
                         <h2>Comparison Operators</h2>
                     </header>
                     <p>
-                        Comparison operators compare two values and return a boolean (<code class="code-block code-bool">True</code> or <code class="code-block code-bool">False</code>). 
-                        They're used constantly in control flow to test conditions.
+                        Comparison operators compare two values and return a boolean (<code class="code-block code-bool">True</code> 
+                        or <code class="code-block code-bool">False</code>). They're used constantly in control flow to test conditions.
                     </p>
-                    <div class="code-block">
-                        <code>a = <span class="code-int">10</span></code><br/>
-                        <code>b = <span class="code-int">5</span></code><br/>
-                        <code><span class="code-keyword">print</span>(a > b)<code class="comment"># True</code></code><br/>
-                        <code><span class="code-keyword">print</span>(a == b)<code class="comment"># False</code></code><br/>
-                        <code><span class="code-keyword">print</span>(a != b)<code class="comment"># True</code></code>
-                    </div>
+                    <section class="code-block">
+                        <code>a = <span class="code-int">10</span></code><br>
+                        <code>b = <span class="code-int">5</span></code><br>
+                        <code>
+                            <span class="code-function">print</span>(a > b)<span class="comment"># True</span>
+                        </code><br>
+                        <code>
+                            <span class="code-function">print</span>(a == b)<span class="comment"># False</span>
+                        </code><br>
+                        <code>
+                            <span class="code-function">print</span>(a != b)<span class="comment"># True</span>
+                        </code>
+                    </section>
                     <ul>
                         <li><code class="code-block">==</code> equal to</li>
                         <li><code class="code-block">!=</code> not equal to</li>
@@ -171,10 +213,13 @@
                         Comments are lines in code that <b>Python</b> ignores when running the program. They exist purely 
                         to explain code to humans reading it — either yourself later, or others working on the same file.
                     </p>
-                    <div class="code-block">
-                        <code class="comment" style="margin-left: 0;"># This is a single-line comment</code><br/>
-                        <code><span class="code-keyword">print</span>(<span class="code-string">"This runs"</span>)</code><code class="comment"># This explains the line</code>
-                    </div>
+                    <section class="code-block">
+                        <code class="comment" style="margin-left: 0;"># This is a single-line comment</code><br>
+                        <code>
+                            <span class="code-function">print</span>(<span class="code-string">"This runs"</span>)
+                        </code>
+                        <code class="comment"># This explains the line</code>
+                    </section>
                 </section>
                 <section class="main-section" id="control_flow">
                     <header>
@@ -182,16 +227,30 @@
                     </header>
                     <p>
                         Control flow refers to the order in which a program's statements execute. 
-                        <b>Python</b> uses <code class="code-block code-keyword">if</code>, <code class="code-block code-keyword">elif</code>, and <code class="code-block code-keyword">else</code> to make decisions based on conditions.
+                        <b>Python</b> uses <code class="code-block code-keyword">if</code>, 
+                        <code class="code-block code-keyword">elif</code>, and <code class="code-block code-keyword">else</code> 
+                        to make decisions based on conditions.
                     </p>
-                    <div class="code-block">
-                        <code><span class="code-keyword">if</span> x > <span class="code-int">10</span>:</code><br />
-                        <code class="tab-4"><span class="code-keyword">print</span>(<span class="code-string">"Big"</span>)</code><br />
-                        <code><span class="code-keyword">elif</span> x == <span class="code-int">10</span>:</code><br />
-                        <code class="tab-4"><span class="code-keyword">print</span>(<span class="code-string">"Equal"</span>)</code><br />
-                        <code><span class="code-keyword">else</span>:</code><br />
-                        <code class="tab-4"><span class="code-keyword">print</span>(<span class="code-string">"Small"</span>)</code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">if</span> x > <span class="code-int">10</span>:
+                        </code><br />
+                        <code class="tab-4">
+                            <span class="code-function">print</span>(<span class="code-string">"Big"</span>)
+                        </code><br />
+                        <code>
+                            <span class="code-keyword">elif</span> x == <span class="code-int">10</span>:
+                        </code><br />
+                        <code class="tab-4">
+                            <span class="code-function">print</span>(<span class="code-string">"Equal"</span>)
+                        </code><br />
+                        <code>
+                            <span class="code-keyword">else</span>:
+                        </code><br />
+                        <code class="tab-4">
+                            <span class="code-function">print</span>(<span class="code-string">"Small"</span>)
+                        </code>
+                    </section>
                 </section>
                 <section class="main-section" id="loops">
                     <header>
@@ -199,13 +258,19 @@
                     </header>
                     <p>
                         Loops let you repeat a block of code multiple times without rewriting it. 
-                        <b>Python</b>'s most common loop, <code class="code-block code-keyword">for</code>, iterates over a sequence like a <code class="code-block code-keyword">list</code> or 
-                        <code class="code-block code-keyword">range</code> of numbers.
+                        <b>Python</b>'s most common loop, <code class="code-block code-keyword">for</code>, 
+                        iterates over a sequence like a <code class="code-block code-fucntion">list</code> or 
+                        <code class="code-block code-function">range</code> of numbers.
                     </p>
-                    <div class="code-block">
-                        <code><span class="code-keyword">for</span> i <span class="code-keyword">in range</span>(<span class="code-int">5</span>):</code><br />
-                        <code class="tab-4"><span class="code-keyword">print</span>(i)</code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">for</span> i <span class="code-keyword">in</span> 
+                            <span class="code-function">range</span>(<span class="code-int">5</span>):
+                        </code><br />
+                        <code class="tab-4">
+                            <span class="code-function">print</span>(i)
+                        </code>
+                    </section>
                 </section>
                 <section class="main-section" id="functions">
                     <header>
@@ -216,11 +281,18 @@
                         defined once and called whenever needed. Functions help avoid repeating 
                         code and make programs easier to organize and test.
                     </p>
-                    <div class="code-block">
-                        <code><span class="code-keyword">def</span> add(a, b):</code><br />
-                        <code class="tab-4"><span class="code-keyword">return</span> a + b</code><br /><br />
-                        <code>result = add(<span class="code-int">4</span>, <span class="code-int">6</span>)</code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">def</span> <span class="code-function">add</span>(a, b):
+                        </code><br />
+                        <code class="tab-4">
+                            <span class="code-keyword">return</span> a + b
+                        </code><br /><br />
+                        <code>
+                            result = <span class="code-function">add</span>
+                            (<span class="code-int">4</span>, <span class="code-int">6</span>)
+                        </code>
+                    </section>
                 </section>
                 <section class="main-section" id="data_structures">
                     <header>
@@ -234,8 +306,7 @@
                     <ul>
                         <li>Lists store ordered items, accessed by index:
                             <code class="code-block">
-                                nums = [
-                                <span class="code-int">1</span>,
+                                nums = [<span class="code-int">1</span>,
                                 <span class="code-int">2</span>,
                                 <span class="code-int">3</span>]
                             </code>
@@ -258,14 +329,21 @@
                     </header>
                     <p>
                         File handling lets a program read from or write to files stored on disk. 
-                        <b>Python</b>'s built-in <code class="code-block"><span class="code-keyword">open</span>()</code> function, used with, safely opens a file and 
-                        automatically closes it afterward.
+                        <b>Python</b>'s built-in <code class="code-block"><span class="code-function">open</span>()</code> 
+                        function, used with, safely opens a file and automatically closes it afterward.
                     </p>
-                    <div class="code-block">
-                        <code><span class="code-keyword">with open</span>(<span class="code-string">"file.txt"</span>) <span class="code-keyword">as</span> f:</code><br />
-                        <code class="tab-4">data = f.read()</code><br />
-                        <code class="tab-4"><span class="code-keyword">print</span>(data)</code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">with</span> 
+                            <span class="code-function">open</span>(<span class="code-string">"file.txt"</span>) 
+                            <span class="code-keyword">as</span> f:</code><br />
+                        <code class="tab-4">
+                            data = f.<span class="code-function">read</span>()
+                        </code><br />
+                        <code class="tab-4">
+                            <span class="code-function">print</span>(data)
+                        </code>
+                    </section>
                     <p>
                        Opening a file in write mode <em>("w")</em> instead of default read mode <em>("r")</em> lets you save data to it. 
                     </p>
@@ -275,32 +353,291 @@
                         <h2>Classes and OOP</h2>
                     </header>
                     <p>
-                        Object-Oriented Programming (OOP) organizes code around objects — bundles of data (attributes) 
-                        and behavior (methods) defined by a class, which acts as a blueprint.
+                        Object-Oriented Programming (OOP) organizes code around objects — bundles of data (<b>attributes</b>) 
+                        and behavior (<b>methods</b>) defined by a class, which acts as a blueprint.
                     </p>
-                    <div class="code-block">
-                        <code><span class="code-keyword">class</span> Student:</code><br/>
-                        <code class="tab-4"><span class="code-keyword">def</span> __init__(<span class="code-keyword">self</span>, name):</code><br/>
-                        <code class="tab-8"><span class="code-keyword">self</span>.name = name</code><br/><br/>
-                        <code class="tab-4"><span class="code-keyword">def</span> greet(<span class="code-keyword">self</span>):</code><br/>
-                        <code class="tab-8"><span class="code-keyword">print</span>(f<span class="code-string">"Hi, I'm </span>{self.name}<span class="code-string">"</span>)</code><br/><br/>
-                        <code>s = Student(<span class="code-string">"Ray"</span>)</code><br/>
-                        <code>s.greet()</code>
-                    </div>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">class</span> <span class="code-class-and-arg">Student</span>:
+                        </code><br>
+                        <code class="tab-4">
+                            <span class="code-keyword">def</span> <span class="code-function">__init__</span>
+                            (<span class="code-keyword">self</span>, <span class="code-class-and-arg">name</span>):
+                        </code><br>
+                        <code class="tab-8">
+                            <span class="code-keyword">self</span>.name = <span class="code-class-and-arg">name</span>
+                        </code><br><br>
+                        <code class="tab-4">
+                            <span class="code-keyword">def</span> <span class="code-function">greet</span>
+                            (<span class="code-keyword">self</span>):
+                        </code><br>
+                        <code class="tab-8">
+                            <span class="code-function">print</span>(f<span class="code-string">"Hi, I'm </span>
+                            {<span class="code-keyword">self</span>.name}<span class="code-string">"</span>)
+                        </code><br><br>
+                        <code>
+                            new_student = <span class="code-class-and-arg">Student</span>(<span class="code-string">"Ray"</span>)
+                        </code><br>
+                        <code>new_student.<span class="code-function">greet</span>()</code>
+                    </section>
                     <ul>
-                        <li><code class="code-block code-keyword">class</code> defines a blueprint for creating objects</li>
-                        <li><code class="code-block code-keyword">__init__</code> runs automatically when an object is created, setting its initial attributes</li>
-                        <li><code class="code-block code-keyword">self</code> refers to the specific object calling the method</li>
+                        <li>
+                            <code class="code-block code-keyword">class</code> defines a blueprint for creating objects
+                        </li>
+                        <li>
+                            <code class="code-block code-keyword">__init__</code> runs automatically when an object is created, 
+                            setting its initial attributes
+                        </li>
+                        <li>
+                            <code class="code-block code-keyword">self</code> refers to the specific object calling the method
+                        </li>
                     </ul>
+                </section>
+                <section class="main-section" id="inheritance">
+                    <header>
+                        <h2>Inheritance</h2>
+                    </header>
+                    <p>
+                        Inheritance lets one class (the child) reuse the attributes and methods of another class (the parent), 
+                        instead of rewriting them from scratch.
+                    </p>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">class</span> 
+                            <span class="code-class-and-arg">Boy</span>(<span class="code-class-and-arg">Student</span>):
+                        </code><br>
+                        <code class="tab-4">
+                            <span class="code-keyword">def</span> 
+                            <span class="code-function">__init__</span>(<span class="code-keyword">self</span>, 
+                            <span class="code-class-and-arg">name</span>):
+                        </code><br>
+                        <code class="tab-8">
+                            <span class="code-keyword">self</span>.name = <span class="code-class-and-arg">name</span>
+                        </code><br><br>
+                        <code>new_boy = <span class="code-class-and-arg">Boy</span>(<span class="code-string">"Paul"</span>)</code>
+                        <code>new_boy.<span class="code-function">greet</span>() <span class="comment"># Hi, I am Paul</span></code>
+                    </section>
+                    <ul>
+                        <li>
+                            <code class="code-block code-class-and-arg">Boy(<span class="code-class-and-arg">Student</span>)</code> 
+                            means Boy inherits from the <a href="#classes_and_oop">Student</a> class.
+                            The Boy child-class can call the <code class="code-block"><span class="code-function">greet</span>()</code> 
+                            method in the <a href="#classes_and_oop">Student</a> parent class.
+                        </li>
+                        <li>
+                            Overriding <code class="code-block"><span class="code-function">__init__</span>()</code> in Boy 
+                            replaces the parent's version for that subclass only.</li>
+                        <li>
+                            <code class="code-block"><span class="code-function">super</span>()</code> calls the parent's version of a method 
+                            when you still want it, alongside new behavior.
+                        </li>
+                        <li><b>Python</b> also supports multiple inheritance. One class can inherit from more than one parent.</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="algorithm">
+                    <header>
+                        <h2>Algorithms</h2>
+                    </header>
+                    <p>
+                        An algorithm is a precise, step-by-step procedure for solving a problem.
+                        Good algorithms are judged by correctness (does it give the right answer) 
+                        and efficiency (how much time and memory it uses).
+                    </p>
+                    <ul>
+                        <li><b>Big O notation</b> describes how runtime grows as input size grows, e.g. O(n), O(n log n), O(n²).</li>
+                        <li>
+                            Searching — 
+                            <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_linearsearch.php" target="_blank">
+                                <em>linear search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a> (O(n)) vs 
+                            <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_binarysearch.php" target="_blank">
+                                <em>binary search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a> on a sorted list (O(log n))</li>
+                        <li>
+                            Sorting — 
+                            <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_bblsort.php" target="_blank">
+                                <em>bubble sort</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a> (O(n²)) vs 
+                            <a href="https://www.w3schools.com/dsa/dsa_timecomplexity_mergesort.php" target="_blank">
+                                <em>merge sort</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a> (O(n log n)).
+                        </li>
+                        <li>
+                            Graph algorithms — 
+                            <a href="https://www.w3schools.com/dsa/dsa_data_binarytrees.php" target="_blank">
+                                <em>depth-first search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a>,
+                            <a href="https://www.w3schools.com/dsa/dsa_data_binarytrees.php" target="_blank">
+                                <em>breadth-first search</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a>, 
+                            <a href="https://www.w3schools.com/dsa/dsa_algo_graphs_dijkstra.php" target="_blank">
+                                <em>Dijkstra's shortest path</em><span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a>.
+                        </li>
+                    </ul>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">def</span> <span class="code-function">binary_search</span>
+                            (<span class="code-class-and-arg">arr</span>, <span class="code-class-and-arg">target</span>):
+                        </code><br>
+                        <code class="tab-4">
+                            low, high = <span class="code-int">0</span>, <span class="code-function">len</span>
+                            (<span class="code-class-and-arg">arr</span>) - <span class="code-int">1</span>
+                        </code><br><br>
+                        <code class="tab-4">
+                            <span class="code-keyword">while</span> low &lt;= high:
+                        </code><br>
+                        <code class="tab-8">
+                            mid = (low + high) // <span class="code-int">2</span>
+                        </code><br>
+                        <code class="tab-8">
+                            <span class="code-keyword">if</span> <span class="code-class-and-arg">arr</span>
+                            [mid] == <span class="code-class-and-arg">target</span>:
+                        </code><br>
+                        <code class="tab-12"><span class="code-keyword">return</span> mid</code><br>
+                        <code class="tab-8">
+                            <span class="code-keyword">elif</span> <span class="code-class-and-arg">arr</span>[mid] &lt; 
+                            <span class="code-class-and-arg">target</span>:</code><br>
+                        <code class="tab-12">low = mid + <span class="code-int">1</span></code><br>
+                        <code class="tab-8"><span class="code-keyword">else</span>:</code><br>
+                        <code class="tab-12">high = mid - <span class="code-int">1</span></code><br><br>
+                        <code class="tab-4"><span class="code-keyword">return</span> -<span class="code-int">1</span></code>
+                    </section>
+                </section>
+                <section class="main-section" id="dynamic_programming">
+                    <header>
+                        <h2>Dynamic Programming</h2>
+                    </header>
+                    <p>
+                        Dynamic programming solves a problem by breaking it into smaller, overlapping subproblems, 
+                        solving each one once, and reusing the stored result instead of recomputing it.
+                    </p>
+                    <ul>
+                        <li>
+                            Overlapping subproblems — the same smaller calculation is needed repeatedly (e.g. Fibonacci numbers).
+                        </li>
+                        <li>Memoization (top-down) — solve recursively, caching each result the first time it's computed</li>
+                        <li>Tabulation (bottom-up) — build a table of results iteratively, from the smallest subproblem up.</li>
+                    </ul>
+                    <section class="code-block">
+                        <code>
+                            <span class="code-keyword">def</span> <span class="code-function">fib</span>(<span class="code-class-and-arg">n</span>, 
+                            <span class="code-class-and-arg">memo</span>={}):
+                        </code><br>
+                        <code class="tab-4">
+                            <span class="code-keyword">if</span> <span class="code-class-and-arg">n</span> <span class="code-keyword">in</span> 
+                            <span class="code-class-and-arg">memo</span>:
+                        </code><br>
+                        <code class="tab-8">
+                            <span class="code-keyword">return</span> <span class="code-class-and-arg">memo</span>
+                            [<span class="code-class-and-arg">n</span>]
+                        </code><br><br>
+                        <code class="tab-4">
+                            <span class="code-keyword">if</span> <span class="code-class-and-arg">n</span> &lt;= 
+                            <span class="code-int">1</span>:
+                        </code><br>
+                        <code class="tab-8">
+                            <span class="code-keyword"></span>return <span class="code-class-and-arg">n</span>
+                        </code><br><br>
+                        <code class="tab-4">
+                            <span class="code-class-and-arg">memo</span>[<span class="code-class-and-arg">n</span>] = 
+                            <span class="code-function">fib</span>(<span class="code-class-and-arg">n</span> - <span class="code-int">1</span>, 
+                            <span class="code-class-and-arg">memo</span>) + <span class="code-function">fib</span>
+                            (<span class="code-class-and-arg">n</span> - <span class="code-int">2</span>, 
+                            <span class="code-class-and-arg">memo</span>)
+                        </code><br>
+                        <code class="tab-4">
+                            <span class="code-keyword">return</span> <span class="code-class-and-arg">memo</span>
+                            [<span class="code-class-and-arg">n</span>]
+                        </code>
+                    </section>
+                    <p>
+                        Without memoization, <code class="code-block"><span class="code-function">fib</span>(<span class="code-int">35</span>)</code> 
+                        recalculates the same values millions of times. With it, each value is computed only once.
+                    </p>
+                </section>
+                <section class="main-section" id="databases">
+                    <header>
+                        <h2>Databases</h2>
+                    </header>
+                    <p>
+                        A database stores data persistently, so it survives after a program stops running. 
+                        <b>Python</b>'s built-in <code class="code-block code-keyword">sqlite3</code> 
+                        module can create and query one without installing anything extra.
+                    </p>
+                    <ul>
+                        <li>
+                            SQL databases (<b>SQLite</b>, <b>PostgreSQL</b>, <b>MySQL</b>) store data in structured tables of rows and columns.
+                        </li>
+                        <li>NoSQL databases (e.g. <b>MongoDB</b>) store data more flexibly, as documents or key-value pairs.</li>
+                        <li>Basic operations are often called <i>CRUD</i>: Create, Read, Update, Delete.</li>
+                    </ul>
+                    <section class="code-block">
+                        <code><span class="code-keyword">import</span> sqlite3</code><br><br>
+                        <code>
+                            conn = sqlite3.<span class="code-function">connect</span>
+                            (<span class="code-string">"example.db"</span>)
+                        </code><br>
+                        <code>cur = conn.<span class="code-function">cursor</span>()</code><br>
+                        <code>
+                            cur.<span class="code-function">execute</span>
+                            (<span class="code-string">"CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)"</span>)
+                        </code><br>
+                        <code>
+                            cur.<span class="code-function">execute</span>
+                            (<span class="code-string">"INSERT INTO users (name) VALUES (?)"</span>, 
+                            (<span class="code-string">"Raymond"</span>,))
+                        </code><br>
+                        <code>conn.<span class="code-function">commit</span>()</code><br><br>
+                        <code>
+                            cur.<span class="code-function">execute</span>(<span class="code-string">"SELECT * FROM users"</span>)
+                        </code><br>
+                        <code>
+                            <span class="code-function">print</span>(cur.<span class="code-function">fetchall</span>())  
+                            <span class="comment"># [(1, 'Raymond')]</span>
+                        </code>
+                    </section>
+                </section>
+                <section class="main-section" id="networking_programs">
+                    <header>
+                        <h2>Networking Programs</h2>
+                    </header>
+                    <p>
+                        Networking code lets programs on different machines communicate over a network, 
+                        usually following the client-server model. One program (the client) requests data, another (the server) responds.
+                    </p>
+                    <ul>
+                        <li>
+                            The <code class="code-block code-keyword">socket</code> 
+                            module gives low-level access to network connections (TCP/UDP).
+                        </li>
+                        <li>The third-party requests library makes it simple to send HTTP requests to web servers and APIs.</li>
+                        <li>Data is commonly exchanged in <b>JSON</b> format between client and server.</li>
+                    </ul>
+                    <section class="code-block">
+                        <code><span class="code-keyword">import</span> requests</code><br><br>
+                        <code>
+                            response = requests.<span class="code-function">get</span>("https://api.github.com")
+                        </code><br>
+                        <code><span class="code-function">print</span>(response.status_code)</code><br>
+                        <code><span class="code-function">print</span>(response.<span class="code-function">json</span>())  <span class="comment"># dictionary of the returned data</span></code>
+                    </section>
                 </section>
                 <footer>
                     <section class="privacy-info">
                         <p>
-                            Educational content was generated with the assistance of <a href="https://www.claude.ai" target="_blank" rel="noreferrer noopener">Claude AI</a>
+                            Educational content was generated with the assistance of 
+                            <a href="https://www.claude.ai" target="_blank" rel="noreferrer noopener">
+                                Claude AI
+                                <span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a>
                             and reviewed/organized by the project author.
                             The creator claims <strong style="color: #000;">no right of ownership</strong> to any information found.
                             If there is any wrong, misleading, or inappropriate content found on this page, the creator will humbly take the blame.
-                            Visit <a href="https://www.python.org/" target="_blank" rel="noreferrer noopener">Python.org</a> to get more info on Python documentation.
+                            Visit <a href="https://www.python.org/" target="_blank" rel="noreferrer noopener">
+                                Python.org
+                                <span class="material-symbols-outlined open-in-new">open_in_new</span>
+                            </a> for more info on Python documentation.
                         </p>
                     </section>
                     <address>
@@ -322,7 +659,7 @@
                         </section>
                     </address>
                 </footer>
-            </div>
+            </article>
         </main>
     </body>
 
