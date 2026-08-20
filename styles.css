@@ -82,6 +82,7 @@ body {
     padding-left: 0;
     gap: 0.5rem;
     margin: 0;
+    height: 30vh;
 }
 
 #navbar header h1 {
@@ -207,7 +208,6 @@ address .contacts {
     #navbar {
         order: 1;
         height: 100vh;
-        position: sticky;
         top: 0;
         flex: 1 0 30vw;
         overflow-y: auto;
@@ -227,6 +227,7 @@ address .contacts {
         display: block;
         list-style: none;
         padding-left: 0;
+        height: 100vh;
     }
 
     #navbar ul li {

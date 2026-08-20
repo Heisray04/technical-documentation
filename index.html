@@ -144,19 +144,19 @@
                     </p>
                     <ul>
                         <li>
-                           <code class="code-block code-function">int</code> — whole numbers (e.g., <span class="code-int">10</span>) 
+                           <code class="code-block code-keyword">int</code> — whole numbers (e.g., <span class="code-int">10</span>) 
                         </li>
                         <li>
-                            <code class="code-block code-function">float</code> — decimal numbers (e.g., <span class="code-int">3.14</span>)
+                            <code class="code-block code-keyword">float</code> — decimal numbers (e.g., <span class="code-int">3.14</span>)
                         </li>
                         <li>
-                            <code class="code-block code-function">str</code> — text (e.g., <span class="code-string">"hello"</span>)
+                            <code class="code-block code-keyword">str</code> — text (e.g., <span class="code-string">"hello"</span>)
                         </li>
                         <li>
-                            <code class="code-block code-function">bool</code> — <code class="code-block code-bool">True</code> or 
+                            <code class="code-block code-keyword">bool</code> — <code class="code-block code-bool">True</code> or 
                             <code class="code-block code-bool">False</code>
                         </li>
-                        <li><code class="code-block code-function">list</code> — an ordered, changeable collection</li>
+                        <li><code class="code-block code-keyword">list</code> — an ordered, changeable collection</li>
                     </ul>
                     <section class="code-block">
                         <code>
@@ -259,8 +259,8 @@
                     <p>
                         Loops let you repeat a block of code multiple times without rewriting it. 
                         <b>Python</b>'s most common loop, <code class="code-block code-keyword">for</code>, 
-                        iterates over a sequence like a <code class="code-block code-fucntion">list</code> or 
-                        <code class="code-block code-function">range</code> of numbers.
+                        iterates over a sequence like a <code class="code-block code-keyword">list</code> or 
+                        <code class="code-block code-keyword">range</code> of numbers.
                     </p>
                     <section class="code-block">
                         <code>
@@ -289,8 +289,7 @@
                             <span class="code-keyword">return</span> a + b
                         </code><br /><br />
                         <code>
-                            result = <span class="code-function">add</span>
-                            (<span class="code-int">4</span>, <span class="code-int">6</span>)
+                            result = <span class="code-function">add</span>(<span class="code-int">4</span>, <span class="code-int">6</span>)
                         </code>
                     </section>
                 </section>
@@ -300,8 +299,8 @@
                     </header>
                     <p>
                         Data structures organize and store collections of related data. 
-                        <b>Python</b>'s two most-used built-in structures are <em>lists</em> (ordered collections)
-                        and <em>dictionaries</em> (key-value pairs).
+                        <b>Python</b>'s two most-used built-in structures are <strong>lists</strong> (ordered collections)
+                        and <strong>dictionaries</strong> (key-value pairs).
                     </p>
                     <ul>
                         <li>Lists store ordered items, accessed by index:
@@ -345,7 +344,7 @@
                         </code>
                     </section>
                     <p>
-                       Opening a file in write mode <em>("w")</em> instead of default read mode <em>("r")</em> lets you save data to it. 
+                       Opening a file in write mode (<strong>"w"</strong>) instead of default read mode (<strong>"r"</strong>) lets you save data to it. 
                     </p>
                 </section>
                 <section class="main-section" id="classes_and_oop">
@@ -361,15 +360,16 @@
                             <span class="code-keyword">class</span> <span class="code-class-and-arg">Student</span>:
                         </code><br>
                         <code class="tab-4">
-                            <span class="code-keyword">def</span> <span class="code-function">__init__</span>
-                            (<span class="code-keyword">self</span>, <span class="code-class-and-arg">name</span>):
+                            <span class="code-keyword">def</span> 
+                            <span class="code-function">__init__</span>(<span class="code-keyword">self</span>, 
+                            <span class="code-class-and-arg">name</span>):
                         </code><br>
                         <code class="tab-8">
                             <span class="code-keyword">self</span>.name = <span class="code-class-and-arg">name</span>
                         </code><br><br>
                         <code class="tab-4">
-                            <span class="code-keyword">def</span> <span class="code-function">greet</span>
-                            (<span class="code-keyword">self</span>):
+                            <span class="code-keyword">def</span> 
+                            <span class="code-function">greet</span>(<span class="code-keyword">self</span>):
                         </code><br>
                         <code class="tab-8">
                             <span class="code-function">print</span>(f<span class="code-string">"Hi, I'm </span>
@@ -479,12 +479,14 @@
                     </ul>
                     <section class="code-block">
                         <code>
-                            <span class="code-keyword">def</span> <span class="code-function">binary_search</span>
-                            (<span class="code-class-and-arg">arr</span>, <span class="code-class-and-arg">target</span>):
+                            <span class="code-keyword">def</span> 
+                            <span class="code-function">binary_search</span>(<span class="code-class-and-arg">arr</span>, 
+                            <span class="code-class-and-arg">target</span>):
                         </code><br>
                         <code class="tab-4">
-                            low, high = <span class="code-int">0</span>, <span class="code-function">len</span>
-                            (<span class="code-class-and-arg">arr</span>) - <span class="code-int">1</span>
+                            low, high = <span class="code-int">0</span>, 
+                            <span class="code-function">len</span>(<span class="code-class-and-arg">arr</span>) - 
+                            <span class="code-int">1</span>
                         </code><br><br>
                         <code class="tab-4">
                             <span class="code-keyword">while</span> low &lt;= high:
@@ -493,8 +495,8 @@
                             mid = (low + high) // <span class="code-int">2</span>
                         </code><br>
                         <code class="tab-8">
-                            <span class="code-keyword">if</span> <span class="code-class-and-arg">arr</span>
-                            [mid] == <span class="code-class-and-arg">target</span>:
+                            <span class="code-keyword">if</span> 
+                            <span class="code-class-and-arg">arr</span>[mid] == <span class="code-class-and-arg">target</span>:
                         </code><br>
                         <code class="tab-12"><span class="code-keyword">return</span> mid</code><br>
                         <code class="tab-8">
@@ -535,26 +537,26 @@
                             <span class="code-class-and-arg">memo</span>:
                         </code><br>
                         <code class="tab-8">
-                            <span class="code-keyword">return</span> <span class="code-class-and-arg">memo</span>
-                            [<span class="code-class-and-arg">n</span>]
+                            <span class="code-keyword">return</span> 
+                            <span class="code-class-and-arg">memo</span>[<span class="code-class-and-arg">n</span>]
                         </code><br><br>
                         <code class="tab-4">
                             <span class="code-keyword">if</span> <span class="code-class-and-arg">n</span> &lt;= 
                             <span class="code-int">1</span>:
                         </code><br>
                         <code class="tab-8">
-                            <span class="code-keyword"></span>return <span class="code-class-and-arg">n</span>
+                            <span class="code-keyword">return</span> <span class="code-class-and-arg">n</span>
                         </code><br><br>
                         <code class="tab-4">
                             <span class="code-class-and-arg">memo</span>[<span class="code-class-and-arg">n</span>] = 
-                            <span class="code-function">fib</span>(<span class="code-class-and-arg">n</span> - <span class="code-int">1</span>, 
-                            <span class="code-class-and-arg">memo</span>) + <span class="code-function">fib</span>
-                            (<span class="code-class-and-arg">n</span> - <span class="code-int">2</span>, 
+                            <span class="code-function">fib</span>(<span class="code-class-and-arg">n</span>-<span class="code-int">1</span>, 
+                            <span class="code-class-and-arg">memo</span>) + 
+                            <span class="code-function">fib</span>(<span class="code-class-and-arg">n</span>-<span class="code-int">2</span>, 
                             <span class="code-class-and-arg">memo</span>)
                         </code><br>
                         <code class="tab-4">
-                            <span class="code-keyword">return</span> <span class="code-class-and-arg">memo</span>
-                            [<span class="code-class-and-arg">n</span>]
+                            <span class="code-keyword">return</span> 
+                            <span class="code-class-and-arg">memo</span>[<span class="code-class-and-arg">n</span>]
                         </code>
                     </section>
                     <p>
@@ -573,25 +575,22 @@
                     </p>
                     <ul>
                         <li>
-                            SQL databases (<b>SQLite</b>, <b>PostgreSQL</b>, <b>MySQL</b>) store data in structured tables of rows and columns.
+                            SQL databases (<strong>SQLite</strong>, <strong>PostgreSQL</strong>, <strong>MySQL</strong>) store data in structured tables of rows and columns.
                         </li>
-                        <li>NoSQL databases (e.g., <b>MongoDB</b>) store data more flexibly, as documents or key-value pairs.</li>
+                        <li>NoSQL databases (e.g., <strong>MongoDB</strong>) store data more flexibly, as documents or key-value pairs.</li>
                         <li>Basic operations are often called <em>CRUD</em>: Create, Read, Update, Delete.</li>
                     </ul>
                     <section class="code-block">
                         <code><span class="code-keyword">import</span> sqlite3</code><br><br>
                         <code>
-                            conn = sqlite3.<span class="code-function">connect</span>
-                            (<span class="code-string">"example.db"</span>)
+                            conn = sqlite3.<span class="code-function">connect</span>(<span class="code-string">"example.db"</span>)
                         </code><br>
                         <code>cur = conn.<span class="code-function">cursor</span>()</code><br>
                         <code>
-                            cur.<span class="code-function">execute</span>
-                            (<span class="code-string">"CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)"</span>)
+                            cur.<span class="code-function">execute</span>(<span class="code-string">"CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT)"</span>)
                         </code><br>
                         <code>
-                            cur.<span class="code-function">execute</span>
-                            (<span class="code-string">"INSERT INTO users (name) VALUES (?)"</span>, 
+                            cur.<span class="code-function">execute</span>(<span class="code-string">"INSERT INTO users (name) VALUES (?)"</span>, 
                             (<span class="code-string">"Raymond"</span>,))
                         </code><br>
                         <code>conn.<span class="code-function">commit</span>()</code><br><br>
@@ -618,13 +617,12 @@
                             module gives low-level access to network connections (TCP/UDP).
                         </li>
                         <li>The third-party requests library makes it simple to send HTTP requests to web servers and APIs.</li>
-                        <li>Data is commonly exchanged in <b>JSON</b> format between client and server.</li>
+                        <li>Data is commonly exchanged in <strong>JSON</strong> format between client and server.</li>
                     </ul>
                     <section class="code-block">
                         <code><span class="code-keyword">import</span> requests</code><br><br>
                         <code>
-                            response = requests.<span class="code-function">get</span>
-                            (<span class="code-string">"https://api.github.com"</span>)
+                            response = requests.<span class="code-function">get</span>(<span class="code-string">"https://api.github.com"</span>)
                         </code><br>
                         <code><span class="code-function">print</span>(response.status_code)</code><br>
                         <code><span class="code-function">print</span>(response.<span class="code-function">json</span>())  <span class="comment"># dictionary of the returned data</span></code>
